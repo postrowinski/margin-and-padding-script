@@ -1,0 +1,51 @@
+/* FONTS */
+
+/* VARIABLES */
+
+$main-blue: #11749E;
+
+/* MIXIN */
+
+@mixin transform($trans) {
+    -webkit-transform: $trans;
+    -ms-transform: $trans;
+    transform: $trans;
+}
+
+@mixin middle-align {
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
+}
+
+@mixin middle-center-align {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @include transform(translateY(-50%));
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+/* MEDIA QUERY*/
+
+$desktop: "(max-width: 1200px)";
+$laptop: "(max-width: 991px)";
+$phone: "(max-width: 768px)";
+$vertical-phone: "(max-width: 475px)";
+
+/* GENERAL */
+
+div {
+    min-height: 100px;
+    background: red;
+}
+
+div:nth-of-type(2n) {
+    background: yellow;
+}

@@ -1,0 +1,13 @@
+/* FONTS */
+/* VARIABLES */
+/* MIXIN */
+/* MEDIA QUERY*/
+/* GENERAL */
+div {
+  min-height: 100px;
+  background: red; }
+
+div:nth-of-type(2n) {
+  background: yellow; }
+
+/*# sourceMappingURL=style.css.map */
